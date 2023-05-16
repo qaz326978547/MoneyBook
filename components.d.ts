@@ -9,11 +9,10 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    ElButton: typeof import('element-plus/es')['ElButton']
     ElIcon: typeof import('element-plus/es')['ElIcon']
+    ElProgress: typeof import('element-plus/es')['ElProgress']
     IEpArrowLeftBold: typeof import('~icons/ep/arrow-left-bold')['default']
     IEpArrowRightBold: typeof import('~icons/ep/arrow-right-bold')['default']
-    IEpSetting: typeof import('~icons/ep/setting')['default']
     MainNavBarComponent: typeof import('./src/components/MainNavBarComponent.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

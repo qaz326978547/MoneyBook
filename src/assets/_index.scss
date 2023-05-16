@@ -1,14 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap");
 
 body {
     background-color: whitesmoke;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
+    box-sizing: border-box;
 }
 
 li {
     list-style: none;
 }
-
+ul {
+    margin: 0;
+    padding: 0;
+}
 a {
     text-decoration: none;
 }
@@ -55,37 +59,36 @@ a {
     }
 }
 
-
 //
 
 .accountBook_wrap {
-
+    .budget {
+        background-color: #ffff;
+        width: 100%;
+        padding: 16px 8px;
+        border-radius: 10px;
+    }
     .budget_wrap {
         .expenditure {
-            background-color: red;
+            background-color: #ff5151;
             color: white;
-            border-radius: 30px;
-            padding: 8px;
-            margin-right: 16px;
+            border-radius: 10px;
+            padding: 16px 8px;
             font-weight: bold;
-
             p {
                 margin: 0 0 0 16px;
             }
         }
 
         .income {
-            background-color: rgba(11, 200, 11, 0.851);
+            background-color: #00db00;
             color: white;
-            border-radius: 30px;
-            padding: 8px;
-
+            border-radius: 10px;
+            padding: 16px 8px;
+            font-weight: bold;
             p {
-                margin-left: 16px;
-
+                margin: 0 0 0 16px;
             }
         }
     }
-
-
 }
