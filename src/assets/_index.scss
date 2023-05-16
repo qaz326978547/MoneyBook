@@ -4,15 +4,19 @@ body {
     background-color: whitesmoke;
     font-family: "Noto Sans TC", sans-serif;
     box-sizing: border-box;
+    margin-bottom: 80px;
 }
 
 li {
     list-style: none;
 }
-ul {
+
+ul,
+p {
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
 }
@@ -22,6 +26,7 @@ a {
     bottom: 0;
     right: 0;
     left: 0;
+    z-index: 100;
 
     li {
         cursor: pointer;
@@ -68,6 +73,7 @@ a {
         padding: 16px 8px;
         border-radius: 10px;
     }
+
     .budget_wrap {
         .expenditure {
             background-color: #ff5151;
@@ -75,6 +81,7 @@ a {
             border-radius: 10px;
             padding: 16px 8px;
             font-weight: bold;
+
             p {
                 margin: 0 0 0 16px;
             }
@@ -86,9 +93,26 @@ a {
             border-radius: 10px;
             padding: 16px 8px;
             font-weight: bold;
+
             p {
                 margin: 0 0 0 16px;
             }
         }
     }
+}
+
+.records-index {
+    background-color: #ffff;
+    width: 100%;
+    padding: 16px 8px;
+    border-radius: 10px;
+
+    .records-index-content {
+        margin-left: 16px;
+
+        p {
+            font-weight: bold;
+        }
+    }
+
 }

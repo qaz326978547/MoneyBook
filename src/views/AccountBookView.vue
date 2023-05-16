@@ -27,8 +27,8 @@
                     <p>NT$100</p>
                 </li>
             </ul>
-            <div class="budget mt-3 d-flex align-items-center">
-                <el-progress class="me-3" type="circle" :percentage="percentBudget" />
+            <div class="budget my-3 d-flex align-items-center">
+                <el-progress width="80" class="me-3" type="circle" :percentage="percentBudget" />
                 <ul>
                     <li>預算 NT$ {{ budget }}</li>
                     <li class="badge bg-danger" v-if="cost > budget">超支 NT$ {{ cost }}</li>
@@ -36,14 +36,48 @@
                 </ul>
             </div>
         </div>
+        <div class="records-index-wrap">
+            <p class="mb-2">{{ date }}</p>
+            <div class="records-index mb-2 d-flex align-items-center">
+                <el-icon :size="24">
+                    <i-ep-burger />
+                </el-icon>
+                <div class="w-100 records-index-content d-flex align-items-center justify-content-between">
+                    <div>
+                        <p>午餐</p>
+                        <small>{{ recordTime }}</small>
+                    </div>
+                    <div>
+                        <p>-NT$500</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </div>
 </template>
 
 <script lang="ts" setup>
+import { dayjs } from 'element-plus';
 
-const budget = ref(1300)
+
+const budget = ref(10000)
 const cost = ref(700)
-const percentBudget = Math.round((cost.value / budget.value) * 100)
+const percentBudget = ref(0)
+const setPercentBudget = () => {
+    const remainingBudget = budget.value - cost.value
+    percentBudget.value = Math.round((remainingBudget / budget.value) * 100)
+}
+onMounted(() => {
+    setPercentBudget()
+})
+
+const recordTime = dayjs().format('HH:mm');
+const date = dayjs().format('YYYY-MM-DD')
+
+
+
+
 
 </script>
