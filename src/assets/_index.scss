@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap');
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.rwd-navbar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    li {
+        cursor: pointer;
+    }
+
+    .bi {
+        font-size: 5vw;
+        color: black;
+    }
+
+    p {
+        color: black;
+        font-size: 2vw;
+    }
+
+    .bi-plus-circle-fill {
+        font-size: 10vw;
+        position: absolute;
+        top: 0;
+        transform: translate(-50%, -50%);
+    }
+}
+
+//index nav
+
+.selectDate-nav {
+    background-color: white;
+    border-radius: 20px;
+
+    li.active {
+        background-color: rgb(60, 60, 249);
+        border-radius: 50%;
+        padding: 4px 8px;
+        color: white;
+    }
+}
+
+
+//
+
+.accountBook_wrap {
+
+    .budget_wrap {
+        .expenditure {
+            background-color: red;
+            color: white;
+            border-radius: 30px;
+            padding: 8px;
+            margin-right: 16px;
+            font-weight: bold;
+
+            p {
+                margin: 0 0 0 16px;
+            }
+        }
+
+        .income {
+            background-color: rgba(11, 200, 11, 0.851);
+            color: white;
+            border-radius: 30px;
+            padding: 8px;
+
+            p {
+                margin-left: 16px;
+
+            }
+        }
+    }
+
+
+}
