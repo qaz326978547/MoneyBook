@@ -14,8 +14,6 @@ declare module '@vue/runtime-core' {
     IEpArrowLeftBold: typeof import('~icons/ep/arrow-left-bold')['default']
     IEpArrowRightBold: typeof import('~icons/ep/arrow-right-bold')['default']
     IEpBurger: typeof import('~icons/ep/burger')['default']
-    IEpKnifeFork: typeof import('~icons/ep/knife-fork')['default']
-    IEpSetting: typeof import('~icons/ep/setting')['default']
     MainNavBarComponent: typeof import('./src/components/MainNavBarComponent.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
